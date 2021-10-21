@@ -50,7 +50,7 @@ module.exports = {
       hour: `${hour}h${minutes}`,
     };
 
-    product.old_price = formatPrice(product.old_price);
+    product.oldPrice = formatPrice(product.old_price);
     product.price = formatPrice(product.price);
 
     results = await Product.files(product.id);
